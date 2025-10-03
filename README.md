@@ -14,7 +14,7 @@ Our dataset GitHub repository can be accessed [here](https://github.com/Erdos-Pr
 - Time horizon: year 2019
 - Geographic region: US
 - Features: [components](https://www.epa.gov/sites/default/files/2021-06/documents/national_walkability_index_methodology_and_user_guide_june2021.pdf) of the EPA walkability index
-- Outcome: health outcomes (see [definition](https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2021-/mb5y-ytti/about_data)
+- Outcome: health outcomes (see [definition](https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2021-/mb5y-ytti/about_data))
     1. Arthritis among adults, `ARTHRITIS`
     2. High blood pressure among adults, `BPHIGH`
     3. Cancer (non-skin) or melanoma among adults, `CANCER`
