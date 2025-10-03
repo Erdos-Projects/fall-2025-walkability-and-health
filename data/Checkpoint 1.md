@@ -1,8 +1,7 @@
 # Checkpoint 1: Data Gathering, KPIs
 
 ## Data Gathering
-
-- **EPA walkability index**:
+- **EPA walkability index**
   - [cancer.gov](https://gis.cancer.gov/research/files.html) based on EPA data
     - [Codebook](https://gis.cancer.gov/research/WalkIndex_Codebook.pdf) (explains each feature)
     - [.csv census tract 2019](https://gis.cancer.gov/research/WalkabilityIndex_Tract_2019.csv)
@@ -12,7 +11,6 @@
       2. The mix of employment types and occupied housing: directly correlated to walkability
       3. The mix of employment types  (such as retail, office or industrial): directly correlated to walkability
       4. Distance from the population-weighted centroid to nearest transit stop (meters): indirectly correlated to walkability
-
 - Health data [PLACES and 500 CITIES: Data Dictionary](https://data.cdc.gov/500-Cities-Places/PLACES-and-500-Cities-Data-Dictionary/m35w-spkz/data_preview)
   - There are multiple PLACES data sets since the project took place almost every year. Each project is based on BRFSS measures taken previous years, as one can see here. It seems PLACES 2021 is the project using measures taken in 2019 the most, so in my opinion, we should be using this one, that way all of our data set have year = 2019.
   - The health dataset we are using [CDC PLACES 2021](https://data.cdc.gov/500-Cities-Places/PLACES-Census-Tract-Data-GIS-Friendly-Format-2021-/mb5y-ytti/about_data) is based on a predictive model taking demographics into account (see [model description](https://www.cdc.gov/places/methodology/index.html#:~:text=PLACES%20methodology,census%20tract%2C%20and%20ZCTA%20levels.)). For each measure, the CDC PLACES dataset provides a 95 % confidence interval. This matters for the two reasons below (mentioned in [The Use of Small Area Estimates in Place-Based Health Research](https://pmc.ncbi.nlm.nih.gov/articles/PMC7204458/)):
@@ -20,7 +18,6 @@
     2. Our outcome is noisy (with known confidence intervals), so we need to take this into account in our approach. The following papers provide some guidance for this scenario:
       - [Estimating Regression Models in Which the Dependent Variable Is Based on Estimates](https://www.jstor.org/stable/pdf/25791822.pdf?casa_token=N0BnCWKeyXEAAAAA:zpUTCEulSLZaUusXK78zRF6oIMlStssy-Q8E0MgtPalPAsdhX10pAM3BlexT-Dgp9ZuE3HSiKWeZGZNoF_d4tcJ_tTp8Q57ZVxYtY0znSW3Ewu38Xod2zA)
       - [Usage of an estimated coefficient as a dependent variable](https://www.sciencedirect.com/science/article/pii/S0165176512001231)
-
 - Demographics  
   - [census.gov](https://www.census.gov/programs-surveys/acs/data.html?utm_source=chatgpt.com) (Maryam)  
     I created a Python script to fetch ACS data using the Census API. We had discussed including features such as age, employment, and education. Since there are many other possible features, I decided to start with some basic ones. Specifically, I included: “ % unemployed, % below poverty level, % population over 65, % population with a bachelor’s degree or higher, % commuting by public transportation, % commuting by car ” All features are at the tract level, and I also added a column with the tract-level GEOID (constructed using the state \+ county \+ tract IDs). Attached are the Python script and the initial draft of the CSV data.
