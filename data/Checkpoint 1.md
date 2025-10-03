@@ -21,7 +21,6 @@
 - Demographics  
   - [census.gov](https://www.census.gov/programs-surveys/acs/data.html?utm_source=chatgpt.com) (Maryam)  
     I created a Python script to fetch ACS data using the Census API. We had discussed including features such as age, employment, and education. Since there are many other possible features, I decided to start with some basic ones. Specifically, I included: “ % unemployed, % below poverty level, % population over 65, % population with a bachelor’s degree or higher, % commuting by public transportation, % commuting by car ” All features are at the tract level, and I also added a column with the tract-level GEOID (constructed using the state \+ county \+ tract IDs). Attached are the Python script and the initial draft of the CSV data.
-  - Based on Maryam's script, I am adding the **years = 2018** and **year = 2019**.
 
 ## Data Assessment
 
