@@ -42,3 +42,15 @@ The health dataset we are using [CDC PLACES 2020](https://data.cdc.gov/500-Citie
 2. Our outcome is noisy (with known confidence intervals), so we need to take this into account in our approach. The following papers provide some guidance for this scenario:
     - [Estimating Regression Models in Which the Dependent Variable Is Based on Estimates](https://www.jstor.org/stable/pdf/25791822.pdf?casa_token=N0BnCWKeyXEAAAAA:zpUTCEulSLZaUusXK78zRF6oIMlStssy-Q8E0MgtPalPAsdhX10pAM3BlexT-Dgp9ZuE3HSiKWeZGZNoF_d4tcJ_tTp8Q57ZVxYtY0znSW3Ewu38Xod2zA)
     - [Usage of an estimated coefficient as a dependent variable](https://www.sciencedirect.com/science/article/pii/S0165176512001231)
+  
+## Written proposal of the modeling approach
+
+We plan to fit the following models and evaluate them with cross-validation.
+
+- Our features are walkability components: `D2A`, `D2B`, `D3`, and `D4`,
+- Our outcomes are those who did best on our EDA: `depression`, `obesity`, `high cholesterol`, `high blood pressure`.
+
+1. Linear Regression on Walkability Components (Ridge, L1, L2), Polynomial pipeline (Dimitri)
+2. Random Forest (Praniti)
+3. Poisson (Maryam)
+
