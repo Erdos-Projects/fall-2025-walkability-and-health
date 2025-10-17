@@ -1,31 +1,55 @@
 target,model,rmse_mean,rmse_sd,details
-cancer_prevalence,Linear,1.7219845604479644,0.035342367175976164,
+cancer_prevalence,interaction + linear,1.721509115145345,0.03551246971762289,
+cancer_prevalence,interaction + Ridge,1.721826700438432,,best alpha=100.0
+cancer_prevalence,interaction + PCA + linear,1.721875363966264,,best n_components=10
+cancer_prevalence,Lasso,1.7218816616072044,,best alpha=0.001
+cancer_prevalence,linear,1.7219845604479644,0.035342367175976164,
 cancer_prevalence,Ridge,1.722341657262304,,best alpha=100.0
 cancer_prevalence,Lasso,1.7223465712492023,,best alpha=0.001
-cancer_prevalence,PCA+Linear,1.7223472092870158,,best n_components=4
+cancer_prevalence,PCA + linear,1.7223472092870158,,best n_components=4
 cancer_prevalence,Dummy(mean),1.867657383622063,0.02395907830243304,
-coronary_heart_disease_prevalence,Linear,1.9395646311696044,0.04324763863903881,
-coronary_heart_disease_prevalence,PCA+Linear,1.9400201498713885,,best n_components=3
+coronary_heart_disease_prevalence,interaction + linear,1.9256651835042304,0.038520472529293595,
+coronary_heart_disease_prevalence,interaction + Ridge,1.926045511610429,,best alpha=10.0
+coronary_heart_disease_prevalence,interaction + PCA + linear,1.9260504213971816,,best n_components=10
+coronary_heart_disease_prevalence,Lasso,1.9260909250714808,,best alpha=0.001
+coronary_heart_disease_prevalence,linear,1.9395646311696044,0.04324763863903881,
+coronary_heart_disease_prevalence,PCA + linear,1.9400201498713885,,best n_components=3
 coronary_heart_disease_prevalence,Ridge,1.9400436430141097,,best alpha=100.0
 coronary_heart_disease_prevalence,Lasso,1.9400485816952857,,best alpha=0.001
 coronary_heart_disease_prevalence,Dummy(mean),2.0338819944327193,0.0311087559565968,
-depression_prevalence,Linear,3.2596036873122456,0.11199366288809107,
-depression_prevalence,PCA+Linear,3.260497170148806,,best n_components=3
+depression_prevalence,interaction + linear,3.2293287038056278,0.1175239262144074,
+depression_prevalence,interaction + Ridge,3.231457635622169,,best alpha=10.0
+depression_prevalence,interaction + PCA + linear,3.231466501521529,,best n_components=10
+depression_prevalence,Lasso,3.2315220227435804,,best alpha=0.001
+depression_prevalence,linear,3.2596036873122456,0.11199366288809107,
+depression_prevalence,PCA + linear,3.260497170148806,,best n_components=3
 depression_prevalence,Ridge,3.2615099249682338,,best alpha=100.0
 depression_prevalence,Lasso,3.2615288164968597,,best alpha=0.001
 depression_prevalence,Dummy(mean),3.4026040285719965,0.11613929910002349,
-high_blood_pressure_prevalence,Linear,6.990227890944842,0.21005380926699405,
-high_blood_pressure_prevalence,PCA+Linear,6.991837611998502,,best n_components=3
+high_blood_pressure_prevalence,interaction + linear,6.909653246526275,0.20310620074870378,
+high_blood_pressure_prevalence,Lasso,6.912564168763208,,best alpha=0.001
+high_blood_pressure_prevalence,interaction + Ridge,6.912616906268056,,best alpha=10.0
+high_blood_pressure_prevalence,interaction + PCA + linear,6.912637710455658,,best n_components=10
+high_blood_pressure_prevalence,linear,6.990227890944842,0.21005380926699405,
+high_blood_pressure_prevalence,PCA + linear,6.991837611998502,,best n_components=3
 high_blood_pressure_prevalence,Ridge,6.993361545446775,,best alpha=100.0
 high_blood_pressure_prevalence,Lasso,6.993383775319427,,best alpha=0.001
 high_blood_pressure_prevalence,Dummy(mean),7.345989950825097,0.22030830557597575,
-high_cholesterol_prevalence,Linear,4.274599895340571,0.06592265070498414,
+high_cholesterol_prevalence,interaction + linear,4.2694209292354035,0.0651695184045157,
+high_cholesterol_prevalence,Lasso,4.269767323922099,,best alpha=0.001
+high_cholesterol_prevalence,interaction + Ridge,4.269821163659805,,best alpha=100.0
+high_cholesterol_prevalence,interaction + PCA + linear,4.269918282253463,,best n_components=10
+high_cholesterol_prevalence,linear,4.274599895340571,0.06592265070498414,
 high_cholesterol_prevalence,Ridge,4.275098716901385,,best alpha=100.0
-high_cholesterol_prevalence,PCA+Linear,4.275108192914138,,best n_components=4
+high_cholesterol_prevalence,PCA + linear,4.275108192914138,,best n_components=4
 high_cholesterol_prevalence,Lasso,4.275109277306249,,best alpha=0.001
 high_cholesterol_prevalence,Dummy(mean),4.718996016467654,0.08808904010532488,
-obesity_prevalence,Linear,6.270880700241673,0.15405689008956577,
+obesity_prevalence,interaction + linear,6.197674306965821,0.14261914067196776,
+obesity_prevalence,interaction + Ridge,6.199124624553502,,best alpha=100.0
+obesity_prevalence,interaction + PCA + linear,6.19931504559256,,best n_components=10
+obesity_prevalence,Lasso,6.199336609868493,,best alpha=0.001
+obesity_prevalence,linear,6.270880700241673,0.15405689008956577,
 obesity_prevalence,Ridge,6.272765837946603,,best alpha=100.0
-obesity_prevalence,PCA+Linear,6.272772774622684,,best n_components=4
+obesity_prevalence,PCA + linear,6.272772774622684,,best n_components=4
 obesity_prevalence,Lasso,6.272773486664504,,best alpha=0.001
 obesity_prevalence,Dummy(mean),6.684677178020209,0.12112438568649202,
