@@ -1,4 +1,5 @@
 target,model,rmse_mean,rmse_sd,details
+cancer_prevalence,Random Forest,1.7037171283018384,,"best params={'rf__max_depth': 10, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 cancer_prevalence,linear + inter,1.721509115145345,0.03551246971762289,
 cancer_prevalence,Ridge + inter,1.721826700438432,,best alpha=100.0
 cancer_prevalence,PCA + linear + inter,1.721875363966264,,best n_components=10
@@ -8,7 +9,9 @@ cancer_prevalence,FGLS (2-step),1.722002635176453,0.035175823508577946,sigma2 me
 cancer_prevalence,Ridge,1.722341657262304,,best alpha=100.0
 cancer_prevalence,Lasso,1.7223465712492023,,best alpha=0.001
 cancer_prevalence,PCA + linear,1.7223472092870158,,best n_components=4
+cancer_prevalence,GLM Poisson,1.7232298088573574,0.03507512943754335,
 cancer_prevalence,dummy,1.867657383622063,0.02395907830243304,
+coronary_heart_disease_prevalence,Random Forest,1.9019559854849544,,"best params={'rf__max_depth': 10, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 coronary_heart_disease_prevalence,linear + inter,1.9256651835042304,0.038520472529293595,
 coronary_heart_disease_prevalence,Ridge + inter,1.926045511610429,,best alpha=10.0
 coronary_heart_disease_prevalence,PCA + linear + inter,1.9260504213971816,,best n_components=10
@@ -18,17 +21,21 @@ coronary_heart_disease_prevalence,FGLS (2-step),1.9397086253421094,0.04398130586
 coronary_heart_disease_prevalence,PCA + linear,1.9400201498713885,,best n_components=3
 coronary_heart_disease_prevalence,Ridge,1.9400436430141097,,best alpha=100.0
 coronary_heart_disease_prevalence,Lasso,1.9400485816952857,,best alpha=0.001
+coronary_heart_disease_prevalence,GLM Poisson,1.940065373566308,0.04266999441720808,
 coronary_heart_disease_prevalence,dummy,2.0338819944327193,0.0311087559565968,
+depression_prevalence,Random Forest,3.200421149466518,,"best params={'rf__max_depth': 5, 'rf__max_features': 1.0, 'rf__min_samples_leaf': 3, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 depression_prevalence,linear + inter,3.2293287038056278,0.1175239262144074,
 depression_prevalence,Ridge + inter,3.231457635622169,,best alpha=10.0
 depression_prevalence,PCA + linear + inter,3.231466501521529,,best n_components=10
 depression_prevalence,Lasso + inter,3.2315220227435804,,best alpha=0.001
+depression_prevalence,GLM Poisson,3.2581055448304084,0.11241031724878545,
 depression_prevalence,linear,3.2596036873122456,0.11199366288809107,
 depression_prevalence,FGLS (2-step),3.2597819954019847,0.11307850530681747,sigma2 mean=10.3
 depression_prevalence,PCA + linear,3.260497170148806,,best n_components=3
 depression_prevalence,Ridge,3.2615099249682338,,best alpha=100.0
 depression_prevalence,Lasso,3.2615288164968597,,best alpha=0.001
 depression_prevalence,dummy,3.4026040285719965,0.11613929910002349,
+high_blood_pressure_prevalence,Random Forest,6.83426455901495,,"best params={'rf__max_depth': 10, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 high_blood_pressure_prevalence,linear + inter,6.909653246526275,0.20310620074870378,
 high_blood_pressure_prevalence,Lasso + inter,6.912564168763208,,best alpha=0.001
 high_blood_pressure_prevalence,Ridge + inter,6.912616906268056,,best alpha=10.0
@@ -38,17 +45,21 @@ high_blood_pressure_prevalence,FGLS (2-step),6.9902469822455755,0.21014516617837
 high_blood_pressure_prevalence,PCA + linear,6.991837611998502,,best n_components=3
 high_blood_pressure_prevalence,Ridge,6.993361545446775,,best alpha=100.0
 high_blood_pressure_prevalence,Lasso,6.993383775319427,,best alpha=0.001
+high_blood_pressure_prevalence,GLM Poisson,6.994198384017466,0.20964295408542366,
 high_blood_pressure_prevalence,dummy,7.345989950825097,0.22030830557597575,
+high_cholesterol_prevalence,Random Forest,4.212952829010534,,"best params={'rf__max_depth': 5, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 high_cholesterol_prevalence,linear + inter,4.2694209292354035,0.0651695184045157,
 high_cholesterol_prevalence,Lasso + inter,4.269767323922099,,best alpha=0.001
 high_cholesterol_prevalence,Ridge + inter,4.269821163659805,,best alpha=100.0
 high_cholesterol_prevalence,PCA + linear + inter,4.269918282253463,,best n_components=10
 high_cholesterol_prevalence,FGLS (2-step),4.2745927687805425,0.06618432540683167,sigma2 mean=18.04
 high_cholesterol_prevalence,linear,4.274599895340571,0.06592265070498414,
+high_cholesterol_prevalence,GLM Poisson,4.274927982513893,0.06618631287589864,
 high_cholesterol_prevalence,Ridge,4.275098716901385,,best alpha=100.0
 high_cholesterol_prevalence,PCA + linear,4.275108192914138,,best n_components=4
 high_cholesterol_prevalence,Lasso,4.275109277306249,,best alpha=0.001
 high_cholesterol_prevalence,dummy,4.718996016467654,0.08808904010532488,
+obesity_prevalence,Random Forest,6.062233928670848,,"best params={'rf__max_depth': 10, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 obesity_prevalence,linear + inter,6.197674306965821,0.14261914067196776,
 obesity_prevalence,Ridge + inter,6.199124624553502,,best alpha=100.0
 obesity_prevalence,PCA + linear + inter,6.19931504559256,,best n_components=10
@@ -58,4 +69,5 @@ obesity_prevalence,FGLS (2-step),6.27091576951528,0.15418495192058712,sigma2 mea
 obesity_prevalence,Ridge,6.272765837946603,,best alpha=100.0
 obesity_prevalence,PCA + linear,6.272772774622684,,best n_components=4
 obesity_prevalence,Lasso,6.272773486664504,,best alpha=0.001
+obesity_prevalence,GLM Poisson,6.275062530688007,0.15515505212921718,
 obesity_prevalence,dummy,6.684677178020209,0.12112438568649202,
