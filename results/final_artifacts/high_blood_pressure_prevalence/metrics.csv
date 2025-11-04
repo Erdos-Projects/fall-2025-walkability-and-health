@@ -1,2 +1,0 @@
-target,rmse_train,r2_train,rmse_test,r2_test,rmse_test_dummy,n_train,n_test
-high_blood_pressure_prevalence,6.557087003782018,0.20257475967922056,6.695075081738977,0.1288302459732007,7.452166963753603,52586,17572

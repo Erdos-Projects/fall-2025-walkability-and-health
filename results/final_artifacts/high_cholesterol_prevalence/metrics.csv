@@ -1,2 +1,0 @@
-target,rmse_train,r2_train,rmse_test,r2_test,rmse_test_dummy,n_train,n_test
-high_cholesterol_prevalence,4.0442190570715795,0.26490984268593154,4.367978943257946,0.2046718180399606,5.023629874344263,52586,17572

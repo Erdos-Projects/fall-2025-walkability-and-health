@@ -1,6 +1,6 @@
-target,rmse_train,r2_train,rmse_test,r2_test,rmse_test_dummy,best_params
-cancer_prevalence,1.635,0.233,1.936,0.169,2.137,"{'n_estimators': 300, 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'max_features': 'sqrt', 'random_state': 42, 'n_jobs': -1}"
-depression_prevalence,3.085,0.178,3.947,0.049,4.382,"{'n_estimators': 300, 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'max_features': 'sqrt', 'random_state': 42, 'n_jobs': -1}"
-high_cholesterol_prevalence,4.044,0.265,4.368,0.205,5.024,"{'n_estimators': 300, 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'max_features': 'sqrt', 'random_state': 42, 'n_jobs': -1}"
-obesity_prevalence,5.808,0.243,6.554,0.115,7.31,"{'n_estimators': 300, 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'max_features': 'sqrt', 'random_state': 42, 'n_jobs': -1}"
-high_blood_pressure_prevalence,6.557,0.203,6.695,0.129,7.452,"{'n_estimators': 300, 'max_depth': 10, 'min_samples_leaf': 2, 'min_samples_split': 2, 'max_features': 'sqrt', 'random_state': 42, 'n_jobs': -1}"
+target,rmse_test,r2_test,rmse_test_dummy
+cancer_prevalence,1.936,0.169,2.137
+depression_prevalence,3.947,0.049,4.382
+high_cholesterol_prevalence,4.368,0.205,5.024
+obesity_prevalence,6.554,0.115,7.31
+high_blood_pressure_prevalence,6.695,0.129,7.452
