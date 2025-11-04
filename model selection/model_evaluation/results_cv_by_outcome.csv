@@ -35,7 +35,7 @@ high_blood_pressure_prevalence,Ridge,6.993361545446775,,best alpha=100.0
 high_blood_pressure_prevalence,Lasso,6.993383775319427,,best alpha=0.001
 high_blood_pressure_prevalence,GLM Poisson,6.994198384017466,0.20964295408542366,
 high_blood_pressure_prevalence,dummy,7.345989950825097,0.22030830557597575,
-high_cholesterol_prevalence,Random Forest,4.212952829010533,,"best params={'rf__max_depth': 5, 'rf__max_features': 'sqrt', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 5, 'rf__n_estimators': 200}"
+high_cholesterol_prevalence,Random Forest,4.212952829010533,,"best params={'rf__max_depth': 5, 'rf__max_features': 'log2', 'rf__min_samples_leaf': 5, 'rf__min_samples_split': 2, 'rf__n_estimators': 200}"
 high_cholesterol_prevalence,linear + inter,4.2694209292354035,0.0651695184045157,
 high_cholesterol_prevalence,Lasso + inter,4.269767323922099,,best alpha=0.001
 high_cholesterol_prevalence,Ridge + inter,4.269821163659805,,best alpha=100.0
